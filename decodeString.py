@@ -73,9 +73,10 @@ def decodeString(s: str) -> str:
 # TEST CASES
 
 # test_string = "300[a]"
-test_string = "300[2[a]]"
+# test_string = "300[2[a]]"
 # test_string = "3[a]2[bc]"
 # test_string = "3[a2[c]]4[cds]dvf"
 # test_string = "2[abc]3[cd]ef"
+test_string = "2[abc]3[3[cd]2[a2[cd]]]ef"
 
 print (decodeString(test_string))
